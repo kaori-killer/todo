@@ -19,6 +19,7 @@ const CreateTaskPopup = ({ modal, toggle, save }) => {
         let taskObj = {};
         taskObj["Name"] = taskName;
         taskObj["Description"] = description;
+        taskObj["isDone"] = false;
         save(taskObj);
     };
 
