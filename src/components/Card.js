@@ -53,7 +53,7 @@ const Card = ({ taskObj, index, deleteTask, updateListArray, handleTaskDone, isD
   };
 
   return (
-    <MuiCard style={{ backgroundColor: colors[index % 5].secondaryColor, margin: '20px', position: 'relative' }}>
+    <MuiCard className="card-wrapper" style={{ backgroundColor: colors[index % 5].secondaryColor, margin: '20px', position: 'relative' }}>
       <div style={{ backgroundColor: colors[index % 5].primaryColor, height: '5px' }}></div>
       <CardContent>
         <Checkbox
